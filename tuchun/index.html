@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=width=device-height,initial-scale=1,user-scalable=0,"/>
+<title>腾讯公益</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/loaders.css"/>
+    <link rel="stylesheet" href="css/page1.css"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script src="js/jquery.imgpreload.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="js/weixin.js?1114"></script>
+</head>
+<body>
+<div style="display: none">
+    <audio id="music" src="data/wsj.mp3" autoplay="autoplay" loop></audio>
+</div>
+<div id="jiantou">
+    <img src="img/jiantou.png" alt=""/>
+</div>
+<div id="dz">
+    <img src="img/dz.png" alt=""/>
+    <div id="dz_wz">为勇敢点赞</div>
+</div>
+<a id="audio_btn" style="display:none;"><img src="img/play.png" width="30" height="30" id="music_btn" border="0"></a>
+<div id="sss">
+    <div id="img_bt1">
+        <img src="img/z1.jpg" alt=""/>
+        <div class="tcwz tcwz1">长按图片保存进你的相册</div>
+        <div class="tcwz tcwz2">支持勇敢代言</div>
+    </div>
+    <div id="img_bt2">
+        <img src="img/z2.jpg" alt=""/>
+        <div class="tcwz tcwz1">长按图片保存进你的相册</div>
+        <div class="tcwz tcwz2">支持勇敢代言</div>
+    </div>
+    <div id="img_bt3">
+        <img src="img/z3.jpg" alt=""/>
+        <div class="tcwz tcwz1">长按图片保存进你的相册</div>
+        <div class="tcwz tcwz2">支持勇敢代言</div>
+    </div>
+    <div id="img_bt4">
+        <img src="img/z4.jpg" alt=""/>
+        <div class="tcwz tcwz1">长按图片保存进你的相册</div>
+        <div class="tcwz tcwz2">支持勇敢代言</div>
+    </div>
+    <div id="img_bt5">
+        <img src="img/z5.jpg" alt=""/>
+        <div class="tcwz tcwz1">长按图片保存进你的相册</div>
+        <div class="tcwz tcwz2">支持勇敢代言</div>
+    </div>
+    <div id="img_bt6">
+        <img src="img/z6.jpg" alt=""/>
+        <div class="tcwz tcwz1">长按图片保存进你的相册</div>
+        <div class="tcwz tcwz2">支持勇敢代言</div>
+    </div>
+    <div id="img_bt7">
+        <img src="img/z7.jpg" alt=""/>
+        <div class="tcwz tcwz1">长按图片保存进你的相册</div>
+        <div class="tcwz tcwz2">支持勇敢代言</div>
+    </div>
+    <div id="jx">您所捐赠的款项<br/>将全部用于《一次手术一生微笑》项目<br/>帮助贫困唇腭裂儿童重拾微笑<br/>该项目由中华儿慈会微笑行动专项基金执行</div>
+    <div id="lunbo">
+        <div class="swiper-container" >
+            <div class="swiper-wrapper">
+               <!-- <div class="swiper-slide" id="bt1" style="background-color: #007aff">
+                    <img src="img/th1.jpg" alt=""/>
+                </div>-->
+                <div class="swiper-slide" id="bt2">
+                    <img src="img/th2.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide" id="bt3">
+                    <img src="img/th3.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide" id="bt4">
+                    <img src="img/th4.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide" id="bt5">
+                    <img src="img/th5.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide" id="bt6">
+                    <img src="img/th6.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide" id="bt7">
+                    <img src="img/th7.jpg" alt=""/>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="weui_dialog">
+        <div class="weui_dialog_hd">
+            <strong class="weui_dialog_title">温馨提示</strong>
+        </div>
+        <div class="weui_dialog_bd">同意并接受《腾讯公益网用户协议》</div>
+        <div class="weui_dialog_ft"><a  class="weui_btn_dialog primary">确定</a></div>
+    </div>
+    <div id="btn">
+        <div id="jbtn2">
+            <img src="img/jbtn2.png" alt=""/>
+        </div>
+    </div>
+    <div id="main" style="overflow-x:hidden;">
+        <div id="wz_s">一厘米缺陷造成的偏见，足以埋没孩子一生的天赋。  <br/>一次手术，一生微笑，为贫困唇腭裂儿童提供治疗。 </div>
+        <div id="wz_bt" >
+            <img src="img/title.png" alt="">
+        </div>
+        <div id="wz_1">初次见到酒窝妹是在2014年微笑行动在云南举办的一次义诊上。活泼、笑起来有甜甜酒窝的她，在一群和她一样的唇腭裂患儿及忧心忡忡的家长身边蹦跶，像是春日里的微风，格外明媚、甜美。很幸运，健康达标的她分别在14年和第二年接受了唇裂及腭裂的修复。</div>
+        <div id="m_img1"><img src="img/t1.jpg" alt=""/></div>
+        <div id="wz_2">接受手术前，慢慢长大的酒窝妹意识到自己与其他孩子不一样后，开始拒绝照镜子。但在手术后的第三天，她却主动跟妈妈说，可不可以抱着她去照镜子。从此家里镜子旁多了个小凳子，酒窝妹时不时的就站上去照一照，还不停地在镜子前摆各种Pose。 </div>
+        <div id="m_img2"><img src="img/t2.jpg" alt=""/></div>
+        <div id="wz_3">酒窝妹的父母也曾被问到这样的问题：“你们是否想过放弃酒窝妹？”，妈妈的第一反应很干脆，说绝对不会放弃孩子。但是被云南的艳阳晒得黝黑、壮硕的父亲言语中充满了愧疚和无奈。他爱孩子，可一家6口人只有他一个人打工有些收入，根本负担不起治疗费用。他怕贫穷耽误了及时的治疗，孩子将来一生要面对周围人各种压力和异样的眼光，学习、工作、成家都比一般人要更艰难。</div>
+        <div id="m_img3"><img src="img/t3.jpg" alt=""/></div>
+        <div id="wz_4">和小伙伴们快乐地玩耍时，右边脸颊上那颗深深的酒窝，告诉我们酒窝妹经历过磨难后的满足和幸福。爸爸说对孩子没有什么期望，希望她平平安安的长大，一家人高高兴兴在一起就好。</div>
+        <div id="m_img4"><img src="img/t4.jpg" alt=""/></div>
+        <div id="m_img5"><img src="img/t5.jpg" alt=""/></div>
+    </div>
+    <div class="wx_pay" id="payTips">
+        <div class="mask">
+        </div>
+        <div class="box">
+            <div class="tab_hd">
+                <h2>请输入捐款金额</h2>
+                <div class="close">
+                </div>
+            </div>
+            <div class="tab_bd" id="tab_bd">
+                <div class="main main_payonce current" id="pay_once">
+                    <div class="fix_input">
+                        <div class="block" data-mta="dtl" data-mta-param="25">
+                            <label class="a label_checked" for="ac0" id="pa0"><input type="radio" class="check_radio" name="account" value="20" id="ac0" ><i class="check_border"></i><span>20</span>元</label>
+                        </div>
+                        <div class="sep">
+                        </div>
+                        <div class="block" data-mta="dtl" data-mta-param="25">
+                            <label class="a" for="ac1" id="pa1"><input type="radio" class="check_radio" name="account" value="50" id="ac1" ><i class="check_border"></i><span>50</span>元</label>
+                        </div>
+                        <div class="sep">
+                        </div>
+                        <div class="block" data-mta="dtl" data-mta-param="25">
+                            <label class="a " for="ac2" id="pa2"><input type="radio" class="check_radio" name="account" value="100" id="ac2" ><i class="check_border"></i><span>100</span>元</label>
+                        </div>
+                        <div class="sep">
+                        </div>
+                        <div class="block" data-mta="dtl" data-mta-param="25">
+                            <label class="a" for="ac3" id="pa3"><input type="radio" class="check_radio" name="account" value="500" id="ac3" ><i class="check_border"></i><span>500</span>元</label>
+                        </div>
+                        <div class="sep">
+                        </div>
+                    </div>
+                    <div class="other_input_wrap">
+                        <div class="other_input">
+                            <input type="number" pattern="[0-9]*" id="moneyInput" data-mta="dtl" data-mta-param="26"><span class="l">其他</span><span class="r">元</span>
+                        </div>
+                    </div>
+                    <a class="btn_a" id="btn_submit" money="50" data-mta="dtl" data-mta-param="27">立即捐款</a>
+                    <div class="prot t2">
+                        <label for="check"><input type="checkbox" name="proto2" value="1" id="check" checked><i></i>同意</label><a href="http://gongyi.qq.com/m/html5/about_1.htm">《腾讯公益用户协议》</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="loadingDiv" style="width:100%;height:100%; background-color:#000; position:fixed;top: 0;z-index:89;">
+        <div class="loader" style="width:100%;height:100%;top:0%;position:fixed; ;">
+            <div class="loader-inner ball-spin-fade-loader" style="width:100px;height:100px; position:absolute;left:50%;top:50%;margin-left:0px;margin-top:-25px;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+   <div id="percentShow" style="z-index:90;"></div>
+<div style="display: none"><script src="https://s13.cnzz.com/z_stat.php?id=1264438822&web_id=1264438822" language="JavaScript"></script></div>
+    <script>
+        var lbsj=null;
+        var ll;
+        //加载函数
+//        window.addEventListener('Load',gameRun());
+        //图片加载
+        var imgNum = 0;
+        var images = [];
+        function preLoadImg() {
+            var imgs = document.images;
+            for (var i = 0; i < imgs.length; i++) {
+                images.push(imgs[i].src);
+            }
+            //get all images in style
+            var cssImages = getallBgimages();
+            for (var j = 0; j < cssImages.length; j++) {
+                images.push(cssImages[j]);
+            }
+            /*这里是真正的图片预加载 preload*/
+            $.imgpreload(images,
+                    {
+                        each: function () {
+                            /*this will be called after each image loaded*/
+                            var status = $(this).data('loaded') ? 'success' : 'error';
+                            if (status == "success") {
+                                var v = (parseFloat(++imgNum) / images.length).toFixed(2);
+                                $("#percentShow").html("Loading:"+Math.round(v * 100-1) + "%");
+                            }
+                        },
+                        all: function () {
+                            /*this will be called after all images loaded*/
+                            $("#percentShow").html("Loading:99%");
+                            gameRun()
+                            //   $("#percentShow").fadeOut(1000);
+                        }
+                    });
+        }
+        //图片加载1
+        function getallBgimages() {
+            var url, B = [], A = document.getElementsByTagName('*');
+            A = B.slice.call(A, 0, A.length);
+            while (A.length) {
+                url = document.deepCss(A.shift(), 'background-image');
+                if (url) url = /url\(['"]?([^")]+)/.exec(url) || [];
+                url = url[1];
+                if (url && B.indexOf(url) == -1) B[B.length] = url;
+            }
+            return B;
+        }
+
+        document.deepCss = function (who, css) {
+            if (!who || !who.style) return '';
+            var sty = css.replace(/\-([a-z])/g, function (a, b) {
+                return b.toUpperCase();
+            });
+            if (who.currentStyle) {
+                return who.style[sty] || who.currentStyle[sty] || '';
+            }
+            var dv = document.defaultView || window;
+            return who.style[sty] ||
+                    dv.getComputedStyle(who, "").getPropertyValue(css) || '';
+        }
+
+        Array.prototype.indexOf = Array.prototype.indexOf ||
+        function (what, index) {
+            index = index || 0;
+            var L = this.length;
+            while (index < L) {
+                if (this[index] === what) return index;
+                ++index;
+            }
+            return -1;
+        }
+        preLoadImg()
+    // 加载函数
+        function gameRun(){
+            function audioAutoPlay() {
+                var audio = document.getElementById('music');
+                audio.play();
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    audio.play();
+                }, false);
+            }
+            audioAutoPlay()
+            $("#audio_btn").css('display','block')
+            $('#jiantou').css('width',50/750*window.innerWidth+'px')
+            $('#jiantou').css('height',26/1210*window.innerHeight+'px')
+            $('#jiantou').css('left',350/750*window.innerWidth+'px')
+            $('#jiantou').css('top',1070/1210*window.innerHeight+'px')
+            $('#jiantou img').css('width',50/750*window.innerWidth+'px')
+            $('#jiantou img').css('height',26/1210*window.innerHeight+'px')
+            $("#jiantou").css('display','block')
+            $("#jx").css('top',337/1210*window.innerHeight+'px')
+            $("#jx").css('height',207/1210*window.innerHeight+'px')
+            $("#jx").css('font-size',24/750*window.innerWidth+'px')
+            function jtdh(){
+                $("#jiantou").animate({
+                    'opacity':1
+                },800,function(){
+                    $("#jiantou").animate({
+                        'opacity':0
+                    },800,function(){
+                        jtdh()
+                    })
+                })
+            }
+            jtdh()
+            $("#dz").css('min-heigth',65/1210*window.innerHeight+'px')
+            $("#dz").css('font-size',25/750*window.innerWidth+'px')
+            $("#dz_wz").css('left',8/750*window.innerWidth+'px')
+            $("#dz img").css('heigth',65/1210*window.innerHeight+'px')
+            $("#dz").css('width',150/750*window.innerWidth+'px')
+            $("#dz img").css('width',64/750*window.innerWidth+'px')
+            $("#dz img").css('left',43/750*window.innerWidth+'px')
+            $("#dz").css('top',730/1210*window.innerHeight+'px')
+            $("#dz").css('left',40/750*innerWidth+'px')
+            $("#dz").css('display','block')
+            //按钮动画
+            function dzdh(){
+                $("#dz img").animate({
+                    'opacity':1
+                },800,function(){
+                    $("#dz img").animate({
+                        'opacity':0
+                    },800,function(){
+                        dzdh()
+                    })
+                })
+            }
+            dzdh()
+            $("#audio_btn").css('left',window.innerWidth-35+'px')
+            $("#audio_btn").click(function(){
+                var music = document.getElementById("music");
+                if(music.paused){
+                    music.play();
+                    $("#music_btn").attr("src","img/play.png");
+                }else{
+                    music.pause();
+                    $("#music_btn").attr("src","img/pause.png");
+                }
+            })
+            $('#lunbo').css('width','100%')
+            $('.swiper-container').css('height',997/1210*window.innerHeight+'px')
+            $('.swiper-container').css('width',window.innerWidth+'px')
+            //btn高度
+            $('#btn').css('height',70/1210*window.innerHeight+'px')
+            $('#btn').css('bottom',34/1210*window.innerHeight+'px')
+            $('#btn div').css('height',70/1210*window.innerHeight+'px')
+            $('#btn div').css('width',231/750*window.innerWidth+'px')
+            $('#btn div').css('left',0.5*window.innerWidth-0.5*(231/750*window.innerWidth)+'px')
+            $('#btn div img').css('height',70/1210*window.innerHeight+'px')
+            $('#btn div img').css('width',231/750*window.innerWidth+'px')
+            $('#btnt img').css('height',8/1210*window.innerHeight+'px')
+            $('#btnt img').css('width','100%')
+            //主体位置
+            $('#main').css('top',997/1210*window.innerHeight+'px')
+            $('#main').css('height',4000/1210*window.innerHeight+'px')
+            $('#main').css('color','rgb(17, 17, 17)')
+            //主体文字 和图片
+            //标题文字
+            $('#wz_s').css('width',671/750*window.innerWidth+'px')
+            $('#wz_s').css('left',34/750*window.innerWidth+'px')
+            $('#wz_s').css('height',70/1210*window.innerHeight+'px')
+            $('#wz_s').css('line-height',35/1210*window.innerHeight+'px')
+            $('#wz_s').css('font-size',28/750*window.innerWidth+'px')
+            $('#wz_bt').css('width',336/750*window.innerWidth+'px')
+            $('#wz_bt').css('height',92/1210*window.innerHeight+'px')
+             $('#wz_bt img').css('width','100%')
+             $('#wz_bt img').css('height','100%')
+//            $('#wz_bt').css('line-height',82/1210*window.innerHeight+'px')
+//            $('#wz_bt').css('font-size',44/750*window.innerWidth+'px')
+            $('#wz_bt').css('left',189/750*window.innerWidth+'px')
+            $('#wz_bt').css('top',145/1210*window.innerHeight+'px')
+            $('#wz_bt').css('margin-top',70/1210*window.innerHeight+'px')
+            //第二段文字
+            $('#wz_1').css('width',670/750*window.innerWidth+'px')
+            $('#wz_1').css('height',195/1210*window.innerHeight+'px')
+            $('#wz_1').css('line-height',39/1210*window.innerHeight+'px')
+            $('#wz_1').css('font-size',26/750*window.innerWidth+'px')
+            $('#wz_1').css('left',34/750*window.innerWidth+'px')
+            $('#wz_1').css('top',312/1210*window.innerHeight+'px')
+            //第一个图
+            $('#m_img1').css('width',670/750*window.innerWidth+'px')
+            $('#m_img1').css('height',518/1210*window.innerHeight+'px')
+            $('#m_img1 img').css('width',670/750*window.innerWidth+'px')
+            $('#m_img1 img').css('height',518/1210*window.innerHeight+'px')
+            $('#m_img1').css('left',34/750*window.innerWidth+'px')
+            $('#m_img1').css('top',497/1210*window.innerHeight+'px')
+            $('#m_img1').css('margin-top','10px')
+            //第二段文字
+            $('#wz_2').css('width',670/750*window.innerWidth+'px')
+            $('#wz_2').css('height',195/1210*window.innerHeight+'px')
+            $('#wz_2').css('line-height',39/1210*window.innerHeight+'px')
+            $('#wz_2').css('font-size',26/750*window.innerWidth+'px')
+            $('#wz_2').css('left',34/750*window.innerWidth+'px')
+            $('#wz_2').css('top',1025/1210*window.innerHeight+'px')
+            $('#wz_2').css('margin-top','20px')
+            //第二章图片
+            $('#m_img2').css('width',670/750*window.innerWidth+'px')
+            $('#m_img2').css('height',974/1210*window.innerHeight+'px')
+            $('#m_img2 img').css('width',670/750*window.innerWidth+'px')
+            $('#m_img2 img').css('height',974/1210*window.innerHeight+'px')
+            $('#m_img2').css('left',34/750*window.innerWidth+'px')
+            $('#m_img2').css('top',1240/1210*window.innerHeight+'px')
+            $('#m_img2').css('margin-top','20px')
+            //第三段文字
+            $('#wz_3').css('width',670/750*window.innerWidth+'px')
+            $('#wz_3').css('height',312/1210*window.innerHeight+'px')
+            $('#wz_3').css('line-height',39/1210*window.innerHeight+'px')
+            $('#wz_3').css('font-size',26/750*window.innerWidth+'px')
+            $('#wz_3').css('left',34/750*window.innerWidth+'px')
+            $('#wz_3').css('top',2234/1210*window.innerHeight+'px')
+            $('#wz_3').css('margin-top','20px')
+            //第三章图片
+            $('#m_img3').css('width',670/750*window.innerWidth+'px')
+            $('#m_img3').css('height',445/1210*window.innerHeight+'px')
+            $('#m_img3 img').css('width',670/750*window.innerWidth+'px')
+            $('#m_img3 img').css('height',445/1210*window.innerHeight+'px')
+            $('#m_img3').css('left',34/750*window.innerWidth+'px')
+            $('#m_img3').css('top',2566/1210*window.innerHeight+'px')
+            $('#m_img3').css('margin-top','10px')
+            //第思段文字
+            $('#wz_4').css('width',670/750*window.innerWidth+'px')
+            $('#wz_4').css('height',156/1210*window.innerHeight+'px')
+            $('#wz_4').css('line-height',39/1210*window.innerHeight+'px')
+            $('#wz_4').css('font-size',26/750*window.innerWidth+'px')
+            $('#wz_4').css('left',34/750*window.innerWidth+'px')
+            $('#wz_4').css('top',3021/1210*window.innerHeight+'px')
+            $('#wz_4').css('margin-top','20px')
+            //第四章图片
+            $('#m_img4').css('width',670/750*window.innerWidth+'px')
+            $('#m_img4').css('height',446/1210*window.innerHeight+'px')
+            $('#m_img4 img').css('width',670/750*window.innerWidth+'px')
+            $('#m_img4 img').css('height',446/1210*window.innerHeight+'px')
+            $('#m_img4').css('left',34/750*window.innerWidth+'px')
+            $('#m_img4').css('top',3197/1210*window.innerHeight+'px')
+            $('#m_img4').css('margin-top','20px')
+            //第四章图片
+            $('#m_img5').css('width',670/750*window.innerWidth+'px')
+            $('#m_img5').css('height',208/1210*window.innerHeight+'px')
+            $('#m_img5 img').css('width',670/750*window.innerWidth+'px')
+            $('#m_img5 img').css('height',208/1210*window.innerHeight+'px')
+            $('#m_img5').css('left',34/750*window.innerWidth+'px')
+            $('#m_img5').css('top',3653/1210*window.innerHeight+'px')
+            $('#m_img5').css('margin-top','20px')
+            //弹出图片
+            $('.tcwz').css('font-size',25/750*window.innerWidth+'px')
+            $('.tcwz1').css('width',300/750*window.innerWidth+'px')
+            $('.tcwz1').css('left',230/750*window.innerWidth+'px')
+            $('.tcwz1').css('top',1063/1210*window.innerHeight+'px')
+            $('.tcwz2').css('width',170/750*window.innerWidth+'px')
+            $('.tcwz2').css('left',307/750*window.innerWidth+'px')
+            $('.tcwz2').css('top',1100/1210*window.innerHeight+'px')
+            $('#img_bt1 img').css('height',943/1210*window.innerHeight+'px')
+            $('#img_bt1 img').css('width',531/750*window.innerWidth+'px')
+            $('#img_bt1 img').css('top',102/1210*window.innerHeight+'px')
+            $('#img_bt1 img').css('left',111/750*window.innerWidth+'px')
+            $('#img_bt2 img').css('height',943/1210*window.innerHeight+'px')
+            $('#img_bt2 img').css('width',531/750*window.innerWidth+'px')
+            $('#img_bt2 img').css('top',102/1210*window.innerHeight+'px')
+            $('#img_bt2 img').css('left',111/750*window.innerWidth+'px')
+            $('#img_bt3 img').css('height',943/1210*window.innerHeight+'px')
+            $('#img_bt3 img').css('width',531/750*window.innerWidth+'px')
+            $('#img_bt3 img').css('top',102/1210*window.innerHeight+'px')
+            $('#img_bt3 img').css('left',111/750*window.innerWidth+'px')
+            $('#img_bt4 img').css('height',943/1210*window.innerHeight+'px')
+            $('#img_bt4 img').css('width',531/750*window.innerWidth+'px')
+            $('#img_bt4 img').css('top',102/1210*window.innerHeight+'px')
+            $('#img_bt4 img').css('left',111/750*window.innerWidth+'px')
+            $('#img_bt5 img').css('height',943/1210*window.innerHeight+'px')
+            $('#img_bt5 img').css('width',531/750*window.innerWidth+'px')
+            $('#img_bt5 img').css('top',102/1210*window.innerHeight+'px')
+            $('#img_bt5 img').css('left',111/750*window.innerWidth+'px')
+            $('#img_bt6 img').css('height',943/1210*window.innerHeight+'px')
+            $('#img_bt6 img').css('width',531/750*window.innerWidth+'px')
+            $('#img_bt6 img').css('top',102/1210*window.innerHeight+'px')
+            $('#img_bt6 img').css('left',111/750*window.innerWidth+'px')
+            $('#img_bt7 img').css('height',943/1210*window.innerHeight+'px')
+            $('#img_bt7 img').css('width',531/750*window.innerWidth+'px')
+            $('#img_bt7 img').css('top',102/1210*window.innerHeight+'px')
+            $('#img_bt7 img').css('left',111/750*window.innerWidth+'px')
+            //付款
+            $('#btn_submit').attr('money',$('.label_checked>input').val())
+            function repay(){
+                $('#pa0').on('click',function(){
+                    $('.wx_pay .box .fix_input .block label.a.label_checked').removeClass('label_checked')
+                    $('#pa0').addClass('label_checked')
+                    $('#btn_submit').attr('money',$('.label_checked>input').val())
+                })
+                $('#pa1').on('click',function(){
+                    $('.wx_pay .box .fix_input .block label.a.label_checked').removeClass('label_checked')
+                    $('#pa1').addClass('label_checked')
+                    $('#btn_submit').attr('money',$('.label_checked>input').val())
+                })
+                $('#pa2').on('click',function(){
+                    $('.wx_pay .box .fix_input .block label.a.label_checked').removeClass('label_checked')
+                    $('#pa2').addClass('label_checked')
+                    $('#btn_submit').attr('money',$('.label_checked>input').val())
+                })
+                $('#pa3').on('click',function(){
+                    $('.wx_pay .box .fix_input .block label.a.label_checked').removeClass('label_checked')
+                    $('#pa3').addClass('label_checked')
+                    $('#btn_submit').attr('money',$('.label_checked>input').val())
+                })
+                $('#moneyInput').bind('input propertychange', function() {
+                    $('.wx_pay .box .fix_input .block label.a.label_checked').removeClass('label_checked')
+                    $('#btn_submit').attr('money',$('#moneyInput').val())
+                });
+                $('#moneyInput').on('click',function(){
+                    $('.wx_pay .box .fix_input .block label.a.label_checked').removeClass('label_checked')
+                    $('#btn_submit').attr('money',$('#moneyInput').val())
+                })
+
+            }
+            repay()
+            //cnzz统计
+            _czc.push(["_trackEvent", "开启项目"+GetQueryString("id"), "成功开启"]);
+            function GetQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return (r[2]);
+                return null;
+            }
+
+
+
+
+
+                $('#loadingDiv').css('display','none')
+                $('#percentShow').css('display','none')
+                 $('#sss').css('display','block')
+                //轮播
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    autoplay : 3000,
+                    autoplayDisableOnInteraction : false,
+                    paginationClickable: true,
+                    preventClicks : false,
+                    preventClicksPropagation:false
+                });
+            //点击图片1
+            $("#dz").on('click',function(){
+                ll=$('.swiper-slide.swiper-slide-active').attr('id')
+                $('#img_'+ll).css('display','block')
+            })
+
+                 $('#img_bt1').on('click',function(){
+                    $('#img_bt1').css('display','none')
+                 })
+            $('#img_bt2').on('click',function(){
+                $('#img_bt2').css('display','none')
+            })
+            $('#img_bt3').on('click',function(){
+                $('#img_bt3').css('display','none')
+            })
+            $('#img_bt4').on('click',function(){
+                $('#img_bt4').css('display','none')
+            })
+            $('#img_bt5').on('click',function(){
+                $('#img_bt5').css('display','none')
+            })
+            $('#img_bt6').on('click',function(){
+                $('#img_bt6').css('display','none')
+            })
+            $('#img_bt7').on('click',function(){
+                $('#img_bt7').css('display','none')
+            })
+            //捐款按钮
+            $('#jbtn2').on('click',function(){
+                $('.wx_pay').addClass('sh')
+                $('#jx').css('display','block')
+            })
+            //关闭按钮
+            $('.close').on('click',function(){
+                $('.wx_pay').removeClass('sh')
+                $('#jx').css('display','none')
+            })
+            //确认捐款
+            $('#btn_submit').on('click',function(){
+                if($('#check').is(':checked')){
+                    if($('#btn_submit').attr('money')!=''){
+                        _czc.push(["_trackEvent", "捐款"+GetQueryString("id"), "成功"+$('#btn_submit').attr('money')]);
+                       self.location='http://ssl.gongyi.qq.com/m/weixin/gopay.html?bid=100000160&sign=ee80b683fbbcd40c8790d0848b4da399&ref_url=20170912GY_v02%2Fback.html&bt=s&pid=20769&money='+$('#btn_submit').attr('money')
+                      //  self.location='https://ssl.gongyi.qq.com/m/weixin/detail.htm?showwxpaytitle=1&et=fx&pid=20769&from=singlemessage'
+                    }else{
+                        $('.weui_dialog_bd').html('请选择金额')
+                        $('.weui_dialog').css('display','block')
+                    }
+                }else{
+                    $('.weui_dialog_bd').html('同意并接受《腾讯公益网用户协议》')
+                    $('.weui_dialog').css('display','block')
+                }
+            })
+            $('.weui_btn_dialog.primary').on('click',function(){
+                $('.weui_dialog').css('display','none')
+            })
+
+        }
+    </script>
+</body>
+</html>

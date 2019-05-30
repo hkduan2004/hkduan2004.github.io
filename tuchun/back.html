@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=width=device-height,initial-scale=1,user-scalable=0,"/>
+    <title>腾讯公益</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="js/weixin.js"></script>
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            width:100%;
+            height:100%;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            
+        }
+        .swiper-pagination-bullet{
+            background: #ff5d37;
+            opacity: 1;
+        }
+        .swiper-container .swiper-pagination-bullet-active{
+            background: #ffffff;
+        }
+        .swiper-slide img {
+            width:100%;
+            border:0;
+            height:100%;
+            padding:0;
+            
+        }
+        @-webkit-keyframes myfirst
+{
+from {-webkit-opacity:0.5};
+to {-webkit-opacity:1};
+}
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+       <!-- <div class="swiper-slide"><img src="img/gx1.jpg" alt=""/></div>-->
+        <div class="swiper-slide"><img src="img/gx2.jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img/gx3.jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img/gx4.jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img/gx5.jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img/gx6.jpg" alt=""/></div>
+        <div class="swiper-slide"><img src="img/gx7.jpg" alt=""/></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<div id="jd" style="background-image:url(img/jd.png);width:59px;height:39px; background-repeat:no-repeat; position:absolute;background-size:100%; top:65%;right:20px;z-index:9999;-webkit-animation: myfirst 1s infinite;" onclick="location.href='https://ssl.gongyi.qq.com/m/weixin/detail.htm?showwxpaytitle=1&et=fx&pid=20769&from=singlemessage'"></div>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        autoplay : 3000,
+        autoplayDisableOnInteraction : false,
+        paginationClickable: true,
+        preventClicks : false,
+        preventClicksPropagation:false
+    });
+    $(".swiper-container").on('click',function(){
+        location="http://game.uquo.net/2017businessproject/20170912GY/index.html"
+    })
+
+</script>
+
+
+</body>
+</html>
