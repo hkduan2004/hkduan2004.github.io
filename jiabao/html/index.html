@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="wxm:timeline_title" content="隐藏的呼救">
+    <meta name="wxm:appmessage_title" content="隐藏的呼救">
+    <meta name="wxm:appmessage_desc" content="隐藏的呼救">
+    <!-- 分享缩略图，必须为绝对路径-->
+    <meta name="wxm:img_url" content="http://wximg.gtimg.com/tmt/_demo/wxmoment/img/thumb.jpg">
+    <!-- 分享链接-->
+    <meta name="wxm:link" content="http://wximg.gtimg.com/tmt/_demo/wxmoment/share.html">
+	<title>隐藏的呼救</title>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body onload="init();">
+
+    <!--容器-->
+    <div class="holder abs">
+        <div class="screen screen1">
+            <canvas id="canvas" width="640" height="1200"
+                    style="position: absolute; display: block;
+                    background-color:rgba(0, 0, 0, 1.00);"></canvas>
+        </div>
+    </div>
+
+    <div class="devideTips_Boxs hidden" style="display: none;">
+        <div class="devideTips_Box">
+            <img class="devide_img" src="../img/devide_tips.png">
+            <div class="devide_txt">为了更好的体验，请使用竖屏浏览</div>
+        </div>
+    </div>
+
+    <audio id="snd1" src="../media/test.mp3"></audio>
+    <audio id="snd2" src="../media/test.mp3"></audio>
+
+    <script src="../js/jquery.1.11.0.min.js"></script>
+    <script src="../js/GImgLoad.js"></script>
+    <script src="../js/Gyroscope.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/createjs-2015.11.26.min.js"></script>
+
+    <script src="../loading.js?v=2"></script>
+    <script src="../ani.js?v=6"></script>
+    <script src="../js/lib.js?v=6"></script>
+
+    <script src="//cdn.bootcss.com/eruda/1.2.4/eruda.min.js"></script>
+    <script>eruda.init();</script>
+
+
+    <!-- build:js ../js/lib.js -->
+    <script src="../js/main.js?v=6"></script>
+    <!-- endbuild -->
+    <script>
+        // 微信音频Hack方案
+        ; void function (win, doc, undefined) {
+            // 原理：调用链中的某个事件被标识为用户事件而非系统事件
+            // 进而导致浏览器以为是用户触发播放而允许播放
+            Audio.prototype._play = Audio.prototype.play;
+            HTMLAudioElement.prototype._play = HTMLAudioElement.prototype.play;
+            function wxPlayAudio(audio) {
+                /// <summary>
+                /// 微信播放Hack
+                /// </summary>
+                /// <param name="audio" type="Audio">音频对象</param>
+                WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                    audio._play();
+                });
+            }
+            function play() {
+                var self = this;
+                self._play();
+                var evtFns = [];
+                try {
+                    wxPlayAudio(self);
+                    return;
+                } catch (ex) {
+                    evtFns.push("WeixinJSBridgeReady", function evt() {
+                        wxPlayAudio(self);
+                        for (var i = 0; i < evtFns.length; i += 2) document.removeEventListener(evtFns[i], evtFns[i + 1], false);
+                    });
+                    document.addEventListener("WeixinJSBridgeReady", evtFns[evtFns.length - 1], false);
+                }
+            }
+            Audio.prototype.play = play;
+            HTMLAudioElement.prototype.play = play;
+        }(window, document);
+    </script>
+
+    <script>
+        document.addEventListener('touchmove', backed);
+        function backed(e) {
+//            e.preventDefault();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="authoring-tool" content="Adobe_Animate_CC">
+		<link rel="stylesheet" type="text/css" href="font/FZLTH3K.css" />
+		<link rel="stylesheet" type="text/css" href="font/FZLTH8K.css" />
+		<link rel="stylesheet" type="text/css" href="font/SamsungSharpSans-Bold.css" />
+		<link rel="stylesheet" type="text/css" href="css/idangerous.swiper2.7.6.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css?v=5" />
+		<link rel="stylesheet" type="text/css" href="css/ani1.css" />
+		<link rel="stylesheet" type="text/css" href="css/ani.css" />
+		<link rel="stylesheet" href="http://support-cn.samsung.com/cn/common/css/local_global_common.css">
+		<link rel="stylesheet" href="http://support-cn.samsung.com/common/next/css/pages/sign.css">
+		<link rel="stylesheet" href="http://support-cn.samsung.com/common/css/gnb.css">
+		<link rel="stylesheet" href="http://support-cn.samsung.com/common/next/css/samsung.css">
+		<link rel="stylesheet" href="http://support-cn.samsung.com/cn/next/css/samsung.css">
+		<link rel="stylesheet" href="http://support-cn.samsung.com/common/next/css/samsung.css">
+		<title>三星盖乐世S9 | S9+ 新品发布</title>
+	</head>
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/audio.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var whdef = 100 / 1920; //表示1920的设计图,使用100PX的默认值
+		var wH = window.innerHeight; // 当前窗口的高度
+		var wW = window.innerWidth; // 当前窗口的宽度
+
+		if(wW < 1000) {
+			wW = 1000
+		}
+		var rem = wW * whdef; // 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+		$('html').css('font-size', rem + "px");
+
+		var browser = {
+			versions: function() {
+				var u = navigator.userAgent,
+					app = navigator.appVersion;
+				return { //移动终端浏览器版本信息 
+					trident: u.indexOf('Trident') > -1, //IE内核 
+					presto: u.indexOf('Presto') > -1, //opera内核 
+					webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核 
+					gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核 
+					mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端 
+					ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端 
+					android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器 
+					iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQ HD浏览器 
+					iPad: u.indexOf('iPad') > -1, //是否iPad 
+					webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部 
+				};
+			}(),
+			language: (navigator.browserLanguage || navigator.language).toLowerCase()
+		}
+		if(browser.versions.ios || browser.versions.android) {
+			window.location.href = "mobile/index.html"
+		}
+	</script>
+
+	<!--基础代码-->
+	<!-- SiteCatalyst code version: H.24.Copyright 1997-2008 Omniture, Inc. More info available at http://www.omniture.com -->
+	<script language="JavaScript" type="text/javascript" src="/scripts/s_code_microsite_p4.js"></script>
+	<script language="JavaScript" type="text/javascript">
+		<!--
+		s.pageName = "cn:campaign:mobilephone:galaxys9_20180305:index"
+		s.hier1 = "cn>campaign>mobilephone>galaxys9_20180305>index"
+		s.channel = "cn:campaign"
+		s.prop1 = "cn"
+		s.prop2 = "cn:campaign"
+		s.prop3 = "cn:campaign:mobilephone"
+		s.prop4 = "cn:campaign:mobilephone:galaxys9_20180305"
+
+		/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+		var s_code = s.t();
+		if(s_code) document.write(s_code) //-->
+	</script>
+	<script language="JavaScript" type="text/javascript">
+		<!--
+		if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+		//-->
+	</script><noscript><a href=" " title="Web Analytics"><img
+	src="http://nmetrics.samsung.com/b/ss/sssamsung4cn,sssamsung4mstglobal/1/H.25.5--NS/0"
+	height="1" width="1" border="0" alt="" /></a ></noscript>
+	<!--/DO NOT REMOVE/-->
+	<!-- End SiteCatalyst code version: H.25.5. -->
+
+	<body>
+
+		<div id="container">
+
+			<audio src="audio/1-1.mp3" class="audioS" id="audioS" loop="loop"></audio>
+			<audio src="audio/1.mp3" class="audioB" id="audioB" loop="loop"></audio>
+			<div class="load_div">
+				<div class="loading_icon_box">
+					<img src="images/loading/loading_1.png" class="load_icon" />
+					<img src="images/loading/loading_2.png" class="load_icon" />
+					<img src="images/loading/loading_3.png" class="load_icon" />
+					<img src="images/loading/loading_4.png" class="load_icon" />
+					<img src="images/loading/loading_5.png" class="load_icon" />
+					<img src="images/loading/loading_6.png" class="load_icon" />
+					<img src="images/loading/loading_7.png" class="load_icon" />
+					<img src="images/loading/loading_8.png" class="load_icon" />
+					<img src="images/loading/loading_9.png" class="load_icon" />
+					<img src="images/loading/loading_10.png" class="load_icon" />
+					<img src="images/loading/loading_11.png" class="load_icon" />
+					<img src="images/loading/loading_12.png" class="load_icon" />
+					<img src="images/loading/loading_13.png" class="load_icon" />
+					<img src="images/loading/loading_14.png" class="load_icon" />
+					<img src="images/loading/loading_15.png" class="load_icon" />
+					<img src="images/loading/loading_16.png" class="load_icon" />
+					<img src="images/loading/loading_17.png" class="load_icon" />
+					<img src="images/loading/loading_18.png" class="load_icon" />
+					<img src="images/loading/loading_19.png" class="load_icon" />
+					<img src="images/loading/loading_20.png" class="load_icon" />
+				</div>
+			</div>
+			<!--<div class="login_div">
+				<div class="pass_div">
+					<input type="password" name="" class="password" id="password" value="" placeholder="请输入密码"/>
+					<button class="login">确定</button>
+				</div>
+			</div>-->
+			<div class="swiper-container" id="mySwiper">
+				<div class="swiper-wrapper">
+					<!--<div class="slide"></div>-->
+					<div class="swiper-slide slide1">
+						<div class="nav_bar">
+							<div class="logo_div"><img src="img/logo.png" /></div>
+							<li class="nav_li nav_li_1" onclick="LinkClick('cn:galaxys9_20180305:ningshi_pc','o')"><img src="img/li_1.png" class="nav_w"/><img src="img/nav_linY.png" class="nav_linY"/></li>
+							<li class="nav_li" onclick="LinkClick('cn:galaxys9_20180305:zhihui_pc','o')"><img src="img/li_2.png" class="nav_w"/><img src="img/nav_linY.png" class="nav_linY"/></li>
+							<li class="nav_li" onclick="LinkClick('cn:galaxys9_20180305:shenglin_pc','o')"><img src="img/li_3.png" class="nav_w"/><img src="img/nav_linY.png" class="nav_linY"/></li>
+							<div class="advance_div">
+								<a href="http://support-cn.samsung.com/campaign/event/2018spring/index.html?cid=cn_inbanner_dotcom_s9minisite_pc_s92018spring_20180329" onclick="LinkClick('cn:galaxys9_20180305:huanxin_pc','o')" style="display: block;" target="_blank">
+									<img src="img/yd.png" />
+								</a>
+							</div>
+						</div>
+						<div id="kv_swiper" class="kv_swiper swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide kv_slide_add4">
+									<!--<img src="img/kv_add_name2.png" class="kv_add_name1"/>-->
+									
+									<div class="swiper_slide_add4_content">
+										<img src="img/swing_circle.png" class="swing_circle_img"/>
+										<img src="img/logo_left_down.png" class="logo_left_down"/>
+										<img src="img/logo_left.png" class="logo_left"/>
+										<img src="img/logo_right.png" class="logo_right"/>
+										<img src="img/add_607_p1.png" class="add_607_p1 kvAni fadeInUp transition"/>
+										<div class="add_607_btn">
+											<a href="http://support-cn.samsung.com/campaign/event/2018spring//june/index.html" target="_blank">
+												<img src="img/add_607_btn.png" class="add_607_btn_img kvAni fadeInUp transition"/>
+											</a>
+										</div>
+									</div>
+									<!--<div class="kv_2_word">
+										<img src="img/kv3_r.png" class="kv_add_phone1 kvAni fadeInUp transition"/>
+									</div>-->
+								</div>
+								<div class="swiper-slide kv_slide_add1">
+									<img src="img/kv_add_name1.png" class="kv_add_name1"/>
+									<div class="kv_2_word">
+										<img src="img/kv2_r.png" class="kv_add_phone1 kvAni fadeInUp transition"/>
+									</div>
+								</div>
+								<div class="swiper-slide kv_slide_add2">
+									<img src="img/kv_add_name2.png" class="kv_add_name1"/>
+									<div class="kv_2_word">
+										<img src="img/kv3_r.png" class="kv_add_phone1 kvAni fadeInUp transition"/>
+									</div>
+								</div>
+								<div class="swiper-slide kv_slide_add3">
+									<img src="img/kv_add_name3.png" class="kv_add_name2"/>
+									<div class="kv_2_word">
+										<img src="img/kv2_r.png" class="kv_add_phone1 kvAni fadeInUp transition"/>
+									</div>
+								</div>
+								<div class="swiper-slide kv_slide1">
+									<!--<img src="img/kv1.jpg" class="smCenter"/>-->
+									<img src="img/kv_name1.png" class="kv_name1" />
+									<div class="kv_2_word">
+										<img src="img/kv1_w1.png" class="kv1_w1 kvAni fadeInRight transition" />
+										<img src="img/kv1_w2.png" class="kv1_w2 kvAni fadeInRight transition delay2s" />
+										<img src="img/kv_phone2.png" class="kv_phone2 kvAni fadeInUp transition delay2s" />
+									</div>
+								</div>
+								<!--<div class="swiper-slide kv_slide2">
+									
+									<img src="img/kv_name2.png" class="kv_name2" />
+									
+									<div class="kv_2_word_1">
+										<div class="center_Y">
+											<img src="img/kv_w1.png" class="kv_w1 kvAni fadeInRight transition" />
+											<img src="img/kv_s2.png" class="kv_w2 kvAni fadeInRight transition delay2s" />
+											<a href="http://support-cn.samsung.com/campaign/event/2018spring/index.html" target="_blank" class="kv_btn_new kvAni fadeInRight transition delay3s"><img src="img/kv_btn_new.png"/></a>
+											<img src="img/kv_phone_new.png" class="kv_phone1 kvAni fadeInUp transition delay3s" />
+										</div>
+										
+									</div>
+								</div>-->
+								
+								
+								<!--删除的视频-->
+								<!--<div class="swiper-slide kv_slide3">
+									<img src="img/play_icon_1.png" class="play_icon play_icon2" />
+									<video src="media/kv_1.mp4" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" class="SX_video kv_video_1 SX_video" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" id="kv_video_1" poster="img/kv_1_poster.jpg" preload="auto"></video>
+								</div>
+								<div class="swiper-slide kv_slide4">
+									<img src="img/play_icon_1.png" class="play_icon play_icon1" />
+									<video src="media/kv_2.mp4" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" class="SX_video kv_video SX_video" id="kv_video" poster="img/kv_2_poster.jpg" preload="auto"></video>
+								</div>-->
+							</div>
+
+						</div>
+						<div class="swiper-pagination_1"></div>
+
+					</div>
+					<div class="swiper-slide slide3">
+						<div class="buy_box">
+							<img src="img/close.png" class="close" />
+							<div class="buy_content">
+								<img src="img/phone.png" class="phone_img transition sxAni fadeInUp" />
+								<div class="buy_word_box transition">
+									<img src="img/word_1.png" class="buy_word_1 sxAni delay2s transition1 fadeInRight" />
+									<img src="img/word_2.png" class="buy_word_2 sxAni delay4s transition1 fadeInRight" />
+									<!--<img src="img/word_3.png" class="buy_word_3 sxAni delay6s transition1 fadeInRight" />
+									<img src="img/word_4.png" class="buy_word_4 sxAni delay8s transition1 fadeInRight" />-->
+									<div class="buy_item_1 sxAni delay6s transition fadeInRight">
+										<img src="img/word_5.png" class="kv_p1" />
+										<a href="http://support-cn.samsung.com/campaign/event/S9preorder/preorder/store/queryShop.html" onclick="LinkClick('cn:galaxys9_20180305:yuding1_pc','o')" target="_blank" style="display: block;">
+											<div class="find_icon_box"><img src="img/find_icon.png" class="find_icon" />
+											</div>
+										</a>
+									</div>
+									<div class="line_X sxAni delay8s transition fadeInRight">
+										<img src="img/line_X.png" />
+									</div>
+									<div class="buy_item_2 sxAni delay10s transition fadeInRight">
+										<!--<p class="FZLT_6 p1">线上购买</p>
+										<p class="line_Y">|</p>-->
+										<img src="img/word_6.png" class="kv_p2" />
+										<div class="icon_box">
+											<a href="https://www.samsungshop.com.cn/item/SM-G9650/DS.htm" onclick="LinkClick('cn:galaxys9_20180305:samsungshop_pc','o')" target="_blank" class="SX"><img src="img/SX.png?v=1" /></a>
+											<a href="http://samsung.tmall.com/p/rd578954.htm" onclick="LinkClick('cn:galaxys9_20180305:tmall_pc','o')" target="_blank" class="TM"><img src="img/TM.png" /></a>
+											<a href="https://item.jd.com/6577477.html" onclick="LinkClick('cn:galaxys9_20180305:jd_pc','o')" target="_blank" class="JD"><img src="img/JD.png" /></a>
+											<a href="http://shop.suning.com/30001578/index.html" onclick="LinkClick('cn:galaxys9_20180305:suning_pc','o')" target="_blank" class="SN"><img src="img/SN.png" /></a>
+											<a href="http://prom.gome.com.cn/html/prodhtml/topics/201709/11/7769504897.html" onclick="LinkClick('cn:galaxys9_20180305:gome_pc','o')" target="_blank" class="GM"><img src="img/GM.png" /></a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide slide2">
+						<img src="img/people.png" class="people_img transition fadeInUp sxAni" />
+						<img src="img/slide2-title.png" class="slide2-title transition fadeInLeft sxAni delay6s" />
+						<div class="slide2_content swiper-container" id="video_swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide v_slide1 swiper-no-swiping">
+									<div class="mengban fadeIn1 vAni delay3s transition1"></div>
+									<div class="video-content">
+										<div class="video-box video_show transition2 vAni delay3s">
+											<div class="video-box-content">
+												<img src="img/play.png" class="play_icon play_icon_v1" />
+												<video id="myVideo" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" class="myVideo SX_video" poster="images/4/0.jpg" src="media/1.mp4"></video>
+											</div>
+
+											<div class="how_img_box" onclick="LinkClick('cn:galaxys9_20180305:paishe_pc','o')">
+												<img src="img/how.png" class="how_img vAni fadeInRight transition1 delay8s" />
+											</div>
+											<!--<div class="shopping_img_box">
+												<a href=" http://support-cn.samsung.com/campaign/event/S9preorder/preorder/imc.html?cid=cn_inbanner_imc_pcsite_s9preorder_20180306" onclick="LinkClick('cn:galaxys9_20180305:yuding2_pc','o')" target="_blank" style="display: block;">
+													<img src="img/shopping.png" class="shopping_img vAni transition1 delay10s fadeInRight" />
+												</a>
+											</div>-->
+											<div class="touch_box touch_box_1">
+												<canvas class="myCanvas" id="myCanvas" width="1280" height="720"></canvas>
+												<div class="scroll" id="scroll">
+													<div class="bar bar_1" id="bar">
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<img src="img/title-24.png" class="title-24 title-24_1" />
+										<img src="img/title-96.png" class="title-96 title-96_1" />
+										<img src="img/video_p1.png" class="video_p1 video_p1_1" />
+									</div>
+								</div>
+								<div class="swiper-slide v_slide2 swiper-no-swiping">
+									<div class="mengban fadeIn1 vAni delay3s transition1"></div>
+									<div class="video-content">
+
+										<div class="video-box video_show transition vAni delay3s">
+											<div class="video-box-content">
+												<!--<img src="img/v_poster2.jpg" class="poster_img poster_img_2"/>-->
+												<img src="img/play.png" class="play_icon play_icon_v2" />
+												<video id="myVideo_1" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" class="myVideo SX_video" poster="images/5/0.jpg" src="media/2.mp4"></video>
+											</div>
+											<!--<img src="img/slide2_p2.png" class="slide2_p2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s"/>-->
+											<div class="how_img_box" onclick="LinkClick('cn:galaxys9_20180305:paishe_pc','o')">
+												<img src="img/how.png" class="how_img vAni fadeInRight transition1 delay8s" />
+											</div>
+											<!--<div class="shopping_img_box">
+												<a href=" http://support-cn.samsung.com/campaign/event/S9preorder/preorder/imc.html?cid=cn_inbanner_imc_pcsite_s9preorder_20180306" onclick="LinkClick('cn:galaxys9_20180305:yuding2_pc','o')" target="_blank" style="display: block;">
+													<img src="img/shopping.png" class="shopping_img vAni transition1 delay10s fadeInRight" />
+												</a>
+											</div>-->
+											<div class="touch_box touch_box_2">
+												<canvas class="myCanvas" id="myCanvas_1" width="1280" height="720"></canvas>
+												<div class="scroll" id="scroll_1">
+													<div class="bar bar_2" id="bar_1">
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<img src="img/title-24.png" class="title-24 title-24_2" />
+										<img src="img/title-96.png" class="title-96 title-96_2" />
+										<img src="img/video_p1.png" class="video_p1 video_p1_2" />
+									</div>
+								</div>
+								<div class="swiper-slide v_slide3 swiper-no-swiping">
+									<div class="mengban fadeIn1 vAni delay3s transition1"></div>
+									<div class="video-content">
+										<div class="video-box video_show transition vAni delay3s">
+											<div class="video-box-content">
+												<img src="img/play.png" class="play_icon play_icon_v3" />
+												<video id="myVideo_2" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" class="myVideo SX_video" poster="images/6/0.jpg" src="media/3.mp4"></video>
+											</div>
+											<div class="how_img_box" onclick="LinkClick('cn:galaxys9_20180305:paishe_pc','o')">
+												<img src="img/how.png" class="how_img vAni fadeInRight transition1 delay8s" />
+											</div>
+											<!--<div class="shopping_img_box">
+												<a href=" http://support-cn.samsung.com/campaign/event/S9preorder/preorder/imc.html?cid=cn_inbanner_imc_pcsite_s9preorder_20180306" onclick="LinkClick('cn:galaxys9_20180305:yuding2_pc','o')" target="_blank" style="display: block;">
+													<img src="img/shopping.png" class="shopping_img vAni transition1 delay10s fadeInRight" />
+												</a>
+											</div>-->
+											<div class="touch_box touch_box_3">
+												<canvas class="myCanvas" id="myCanvas_2" width="1280" height="720"></canvas>
+												<div class="scroll" id="scroll_2">
+													<div class="bar bar_3" id="bar_2">
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<img src="img/title-24.png" class="title-24 title-24_3" />
+										<img src="img/title-96.png" class="title-96 title-96_3" />
+										<img src="img/video_p1.png" class="video_p1 video_p1_3" />
+									</div>
+								</div>
+							</div>
+							<a class="arrow-left_1" href="#">
+								<img src="img/yulan1.jpg" class="yulan1 yulan_img_l" />
+								<img src="img/yulan2.jpg" class="yulan2 yulan_img_l" />
+								<img src="img/arrow-left.png" class="arrow_left_icon" />
+							</a>
+							<a class="arrow-right_1" href="#">
+								<img src="img/yulan2.jpg" class="yulan2 yulan_img_r" />
+								<img src="img/yulan3.jpg" class="yulan3 yulan_img_r" />
+								<img src="img/arrow-right.png" class="arrow_right_icon" />
+							</a>
+						</div>
+						<div class="how_box">
+							<a class="arrow-left" href="#"></a>
+							<a class="arrow-right" href="#"></a>
+							<div class="detail_img_box">
+								<a href="http://www.samsung.com/cn/smartphones/galaxy-s9/" onclick="LinkClick('cn:galaxys9_20180305:productdetail_pc','o')" target="_blank">
+									<img src="img/detail.png" class="detail_img howAni howAni2 howAni3 transition2 fadeInRight delay10s" />
+								</a>
+							</div>
+							<!--<div class="shopping_img_1_box">
+								<a href=" http://support-cn.samsung.com/campaign/event/S9preorder/preorder/imc.html?cid=cn_inbanner_imc_pcsite_s9preorder_20180306" onclick="LinkClick('cn:galaxys9_20180305:yuding3_pc','o')" target="_blank">
+									<img src="img/shopping.png" class="shopping_img_1 howAni howAni2 howAni3 transition2 fadeInRight delay11s" />
+								</a>
+							</div>-->
+							<img src="img/floor.png" class="floor_img howAni transition1 fadeInUp delay3s" />
+							<div class="word_box">
+								<img src="img/s1-1.png" class="s1-1 howAni transition2 fadeInLeft" />
+								<img src="img/s1-2.png" class="s1-2 howAni transition2 fadeInLeft delay1s" />
+								<img src="img/s1-3.png" class="s1-3 howAni transition2 fadeInLeft delay2s" />
+								<img src="img/s1-4.png" class="s1-4 howAni transition2 fadeInLeft delay3s" />
+
+							</div>
+							<div class="word_box_1">
+								<img src="img/s2_1.png" class="s2_1 howAni2 transition1 fadeInLeft delay2s" />
+								<img src="img/s2_2.png" class="s2_2 howAni2 transition1 fadeInLeft delay2s" />
+							</div>
+							<div class="word_box_1">
+								<img src="img/s3_1.png" class="s3_1 howAni3 transition1 fadeInLeft delay2s" />
+								<img src="img/s3_2.png" class="s3_2 howAni3 transition1 fadeInLeft delay3s" />
+							</div>
+							<div class="s_phone_div">
+								<img src="img/01.png" class="people_01 howAni transition1 slow_manL delay8s" />
+								<img src="img/02.png" class="people_02 howAni transition1 slow_manM delay9s" />
+								<img src="img/02.png" class="people_02 howAni2 slow_manM" />
+								<img src="img/03.png" class="people_03 howAni transition1 slow_manR delay10s" />
+								<img src="img/kuang.png" class="kuang_img howAni transition2 fadeIn1 delay9s" />
+								<img src="img/s_phone.png" class="s_phone howAni howAni2 howAni3 transition1 fadeInUp delay3s" />
+								<img src="img/phone_nav.png" class="phone_nav howAni transition1 fadeIn1 delay5s" />
+								<img src="img/how1_icon1.png" class="how1_icon1 howAni toShow_big transition1 delay5s" />
+								<img src="img/how1_icon2.png" class="how1_icon2 howAni toShow_big transition1 delay5s" />
+								<img src="img/how1_icon3.png" class="how1_icon3 howAni toShow_big transition1 delay5s" />
+								<img src="img/phone_nav1.png" class="phone_nav1 howAni2 howAni3 fadeIn1 transition" />
+								<img src="img/hand.png" class="hand_img howAni2 howAni3 fadeInUps transition" />
+								<img src="img/slow_2.png" class="slow_2 howAni2 fadeIn1 transition2 delay2s" />
+								<img src="img/swing.png" class="swing_img1 howAni3 fadeIn1 transition2" />
+								<img src="img/f_icon.png" class="swing_img2 howAni3 fadeIn1 transition2" />
+								<img src="img/r_icon.png" class="swing_img3 howAni3 fadeIn1 transition2" />
+								<div class="people3_div">
+									<img src="img/02.png" class="people_02 howAni3 transition2 fadeIn1" />
+									<img src="img/floor_2.png" class="floor_2 howAni3 fadeIn1" />
+									<video src="media/swing.mp4" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" class="swingVideo SX_video howAni3 fadeIn1 transition1" id="swingVideo" loop="loop"></video>
+									<video src="media/reserve.mp4" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" class="swingVideo1 SX_video" id="swingVideo1" loop="loop"></video>
+									<video src="media/loop.mp4" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" class="swingVideo2 SX_video" id="swingVideo2" loop="loop"></video>
+								</div>
+
+							</div>
+							<div class="control_div howAni3 fadeInRight transition1">
+								<div class="control_item">
+									<img src="img/circle_s.png" class="circle_s" />
+									<p class="FZLT_8 s_p">倒退</p>
+								</div>
+								<div class="control_item">
+									<img src="img/circle_s.png" class="circle_s" />
+									<p class="FZLT_8 s_p">循环</p>
+								</div>
+								<div class="control_item c_active">
+									<img src="img/circle_s.png" class="circle_s" />
+									<p class="FZLT_8 s_p">摇摆</p>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<div class="swiper-slide slide4">
+						<div class="slide4_box">
+							<img src="img/Bixby_bg.jpg" class="cover bix" />
+							<img src="img/bix.png" class="cover bix_ani transition3" />
+							<div class="slide4_content">
+								<div class="left_plane sxAni fadeInLeft transition">
+									<img src="images/left/wf0001.png" class="left_plane_icon show" />
+									<img src="images/left/wf0002.png" class="left_plane_icon" />
+									<img src="images/left/wf0003.png" class="left_plane_icon" />
+									<img src="images/left/wf0004.png" class="left_plane_icon" />
+									<img src="images/left/wf0005.png" class="left_plane_icon" />
+									<img src="images/left/wf0006.png" class="left_plane_icon" />
+									<img src="images/left/wf0007.png" class="left_plane_icon" />
+									<img src="images/left/wf0008.png" class="left_plane_icon" />
+
+								</div>
+								<div class="right_plane sxAni fadeInRight1 transition">
+									<img src="images/right/xf0001.png" class="right_plane_icon show" />
+									<img src="images/right/xf0002.png" class="right_plane_icon" />
+									<img src="images/right/xf0003.png" class="right_plane_icon" />
+									<img src="images/right/xf0004.png" class="right_plane_icon" />
+									<img src="images/right/xf0005.png" class="right_plane_icon" />
+									<img src="images/right/xf0006.png" class="right_plane_icon" />
+									<img src="images/right/xf0007.png" class="right_plane_icon" />
+									<img src="images/right/xf0008.png" class="right_plane_icon" />
+								</div>
+								<img src="img/bixby_logo.png" class="bixby_logo sxAni fadeInDown1 transition1" />
+								<img src="img/bixby_title.png" class="bixby_title sxAni transition fadeInLeft delay3s" />
+								<img src="img/Bixby_1.png" class="bixby_1 sxAni transition1 fadeInUps delay9s" />
+								<img src="img/Bixby_2.png" class="bixby_2 sxAni transition1 fadeInUps delay12s" />
+								<img src="img/Bixby_3.png" class="bixby_3 sxAni transition1 fadeInUps delay15s" />
+								<div class="bixby_btn_box" onclick="LinkClick('cn:galaxys9_20180305:bixby_pc','o')"><img src="img/bixby_btn.png" class="bixby_btn sxAni transition fadeIn1 delay18s" /></div>
+							</div>
+						</div>
+						<div class="canvas_div swiper-container" id="canvas_swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/close_bixby.png" class="close_bixby" />
+									<img src="img/bixby_word.png" class="bixby_word canAni transition fadeInUps" />
+									<video src="media/canvas.mp4" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" id="canvasVideo" class="canvasVideo SX_video smCenter" poster="img/canvas_poster.jpg" loop="loop" preload="auto"></video>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/close_bixby.png" class="close_bixby" />
+									<img src="img/bixby_word1.png" class="bixby_word_1 canAni transition fadeInUps" />
+									<video src="media/canvas_1.mp4?v=1" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" id="canvasVideo_1" class="canvasVideo SX_video smCenter" poster="img/canvas_poster1.jpg" loop="loop" preload="auto"></video>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/close_bixby.png" class="close_bixby" />
+									<img src="img/bixby_word2.png" class="bixby_word_1 canAni transition fadeInUps" />
+									<video src="media/canvas_2.mp4?v=1" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" id="canvasVideo_2" class="canvasVideo SX_video smCenter" poster="img/canvas_poster2.png" loop="loop" preload="auto"></video>
+								</div>
+								<div class="swiper-slide">
+									<img src="img/close_bixby.png" class="close_bixby" />
+									<img src="img/bixby_word3.png" class="bixby_word_1 canAni transition fadeInUps" />
+									<video src="media/canvas_3.mp4?v=1" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" id="canvasVideo_3" class="canvasVideo SX_video smCenter" poster="img/canvas_poster3.png" loop="loop" preload="auto"></video>
+								</div>
+							</div>
+							<a class="arrow-left_3" href="#">
+								<img src="img/arrow-left.png" class="arrow_left_icon1 arrow_leftAni" />
+							</a>
+							<a class="arrow-right_3" href="#">
+								<img src="img/arrow-right.png" class="arrow_right_icon1 arrow_rightAni" />
+							</a>
+						</div>
+					</div>
+					
+					<div class="swiper-slide slide_add1">
+						<div class="video_add1">
+							<video src="media/add1.mp4" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" class="add1_video" id="add1_video" poster="img/add1_poster.jpg"></video>
+							<img src="img/play.png" class="play_icon_add"/>
+							<img src="img/add1_poster.jpg" class="add1_poster smCenter"/>
+						</div>
+						<!--<img src="img/adds_pos.png" class="add_pos_ani"/>-->
+						<!--<div class="add_phone_box1">
+							<img src="img/add_phone.png" class="add_phone_1"/>
+						</div>-->
+						<div class="add_phone_box timing add_phone_video">
+							<img src="img/add_phone.png" class="s_phone_add"/>
+							<!--<img src="img/adds_pos.png" class="adds_pos"/>-->
+							<video src="media/in_phone.mp4" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" webkit-playsinline="true" playsinline="true" class="adds_pos" loop="loop" id="in_video"></video>
+							<div class="chat_content add1Ani delay21s fadeIn1">
+								<img src="img/chat_c.png" class="chat_c"/>
+								<img src="img/head_group.png" class="head_group"/>
+								<div class="chat_window">
+									<img src="img/mes1-1.png" class="mes_l mes1_1 transition2 delay2s chatAni"/>
+									<img src="img/mes2-1.png" class="mes_l mes2_1 transition2 delay6s chatAni"/>
+									<img src="img/mes3-1.png" class="mes_r mes3_1 transition2 delay12s chatAni"/>
+									<img src="img/mes4-1.png" class="mes_r mes4_1 transition2 delay16s chatAni"/>
+								</div>
+							</div>
+							<img src="img/add_hand.png" class="add_hand timing"/>	
+							<div class="face1_box face_box add1Ani_1 transition1"><img src="img/face1.gif"/><img src="img/mengpai_circle.png"/></div>
+							<div class="face2_box face_box add1Ani_1 transition1"><img src="img/face2.gif"/><img src="img/mengpai_circle.png"/></div>
+							<div class="face3_box face_box add1Ani_1 transition1"><img src="img/face3.gif"/><img src="img/mengpai_circle.png"/></div>
+							<div class="face4_box face_box add1Ani_1 transition1"><img src="img/face4.gif"/><img src="img/mengpai_circle.png"/></div>
+							<div class="face5_box face_box add1Ani_1 transition1"><img src="img/face5.gif"/><img src="img/mengpai_circle.png"/></div>
+							<div class="face6_box face_box add1Ani_1 transition1"><img src="img/face6.gif"/><img src="img/mengpai_circle.png"/></div>
+						</div>
+						<!--<div class="add_phone_box add_phone_box1 add_phone_box11 timing add_phone_hand">
+							<img src="img/add_phone.png" class="s_phone_add"/>
+							<video src="media/in_phone.mp4" class="adds_pos" loop="loop" id="in_video"></video>
+							<div class="chat_content add1Ani delay21s fadeIn1">
+								<img src="img/chat_c.png" class="chat_c"/>
+								<img src="img/head_group.png" class="head_group"/>
+								<div class="chat_window">
+									<img src="img/mes1-1.png" class="mes_l mes1_1 transition2 delay2s chatAni"/>
+									<img src="img/mes2-1.png" class="mes_l mes2_1 transition2 delay6s chatAni"/>
+									<img src="img/mes3-1.png" class="mes_r mes3_1 transition2 delay12s chatAni"/>
+									<img src="img/mes4-1.png" class="mes_r mes4_1 transition2 delay16s chatAni"/>
+								</div>
+							</div>
+						</div>-->
+						
+						<div class="video_add1_c">
+							<img src="img/add1_bg.jpg" class="add1_bg smCenter"/>
+							<div class="add_left">
+									
+								
+							</div>
+							<div class="add_right">
+								<div class="add_r_c center_Y">
+									<img src="img/add1_title.png" class="add1_title add1Ani fadeInRight transition"/>
+									<img src="img/add1_desc.png" class="add1_desc add1Ani fadeInRight transition delay2s"/>
+									<div class="add1_r_bottom add1Ani fadeInRight transition delay4s">
+										<img src="img/add_posS.png" class="add_posS"/>
+										<div class="add_r_s">
+											<img src="img/add_s_t.png" class="add_s_t"/>
+											<a href="http://www.samsung.com/cn/smartphones/galaxy-s9/" class="add1_btn_box" target="_blank"><img src="img/add1_btn.png" class="add1_btn"/></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="swiper-slide slide5">
+						<img src="img/music.jpg" class="slide5_bg smCenter" />
+						<div class="music_box">
+							<img src="img/music_on.png" class="music_on music_btn" />
+							<img src="img/music_close.png" class="music_close music_btn" />
+						</div>
+						<div class="m_phone_box">
+							<div class="up_icon_box">
+								<img src="img/up.png" class="up_icon sxAni transition1 fadeInLeft delay5s" />
+							</div>
+							<div class="down_icon_box">
+								<img src="img/down.png" class="down_icon sxAni transition1 fadeInRight delay5s" />
+							</div>
+							<div class="crirle_box">
+								<div class="circle sca1"></div>
+								<div class="circle sca2"></div>
+								<div class="circle sca3"></div>
+								<div class="circle_r sca1"></div>
+								<div class="circle_r sca2"></div>
+								<div class="circle_r sca3"></div>
+							</div>
+							<img src="img/music_phone.png" class="m_phone" />
+							<img src="img/s4_t.png" class="s4_t sxAni fadeInLeft transition1 " />
+							<img src="img/music_desc.png" class="music_desc sxAni fadeInLeft transition1 deplay2s" />
+							<p class="music_name sxAni transition1 fadeIn1 delay5s">The classic</p>
+						</div>
+						<div class="bottom_word_div">
+							<div class="md1_div m_div" onclick="LinkClick('cn:galaxys9_20180305:liti_pc','o')" data-index="0"><img src="img/md1.png" class="md1 md fadeInUps sxAni delay3s transition" /></div>
+							<div class="line_Y_m fadeInUps sxAni delay5s transition"></div>
+							<div class="md2_div m_div" onclick="LinkClick('cn:galaxys9_20180305:xuni_pc','o')" data-index="1"><img src="img/md2.png" class="md2 md fadeInUps sxAni delay5s transition" /></div>
+							<div class="line_Y_m2 fadeInUps sxAni delay7s transition"></div>
+							<div class="md3_div m_div" onclick="LinkClick('cn:galaxys9_20180305:lanya_pc','o')" data-index="2"><img src="img/md3.png" class="md3 md fadeInUps sxAni delay7s transition" /></div>
+						</div>
+						<!--<img src="img/famian.png" class="famian_png fadeInUps sxAni delay9s transition" />-->
+						<div class="detail_box transition2">
+							<img src="img/close_2.png" class="close_2" />
+							<div class="swiper-container music_swiper" id="music_swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide m_slide1">
+										<div class="music_1_box">
+											<img src="img/music_1.png" class="music_1 transition mAni fadeInDown1" />
+										</div>
+										<img src="img/m1_p1.jpg" class="m1_p1 mAni fadeInUps transition1 delay5s" />
+										<img src="img/m1_p2.png" class="m1_p2 mAni fadeInUps transition1 delay8s" />
+										<img src="img/m1_p3.png" class="m1_p3 mAni fadeInUps transition1 delay12s" />
+										<div class="m_btn_box">
+											<a href="http://www.samsung.com/cn/smartphones/galaxy-s9/" onclick="LinkClick('cn:galaxys9_20180305:yudinga_pc','o')" style="display: block;" target="_blank"><img src="img/m_btn.png" class="m_btn mAni toShow_big transition1 delay14s" /></a>
+										</div>
+
+									</div>
+									<div class="swiper-slide m_slide2">
+										<img src="img/music_2.jpg" class="music_2 transition mAni fadeInDown1" />
+										<img src="img/m2_p1.png" class="m2_p1 mAni fadeInLeft transition1 delay5s" />
+										<img src="img/m2_p2.png" class="m2_p2 mAni fadeInRight transition1 delay8s" />
+										<img src="img/m2_p3.png" class="m2_p3 mAni fadeInUps transition1 delay8s" />
+										<div class="m_btn_box">
+											<a href="http://www.samsung.com/cn/smartphones/galaxy-s9/" onclick="LinkClick('cn:galaxys9_20180305:yudingb_pc','o')" style="display: block;" target="_blank">
+												<img src="img/m_btn.png" class="m_btn mAni toShow_big transition1 delay14s" />
+											</a>
+										</div>
+									</div>
+									<div class="swiper-slide m_slide3">
+										<div class="m_slide3_content">
+											<div class="video-box-2 mAni toShow_big transition1">
+												<video src="media/earVideo.mp4" id="earVideo" class="earVideo SX_video"></video>
+												<img src="img/poster2.jpg" class="poster_ear" />
+
+											</div>
+											<div class="word_box_3">
+												<img src="img/ear_title.jpg" class="ear_title mAni fadeInRight transition1" />
+												<img src="img/m3_p2.png" class="m3_p2 me_all_img mAni fadeInUp transition1 delay2s" />
+												<img src="img/m3_p3.png" class="m3_p3 me_all_img mAni fadeInUp transition1 delay4s" />
+												<img src="img/m3_p4.png" class="m3_p4 me_all_img mAni fadeInUp transition1 delay6s" />
+												<img src="img/m3_p5.png" class="m3_p5 me_all_img mAni fadeInUp transition1 delay8s" />
+												<img src="img/m3_p6.png" class="m3_p6 me_all_img mAni fadeInUp transition1 delay10s" />
+												<img src="img/m3_p7.png" class="m3_p7 me_all_img mAni fadeInUp transition1 delay12s" />
+												<img src="img/m3_p8.png" class="m3_p8 me_all_img mAni fadeInUp transition1 delay14s" />
+												<img src="img/m3_p10.png" class="m3_p10 me_all_img mAni fadeInUp transition1 delay16s" />
+												<!--<div class="m_detail_box"><img src="img/buy_ear.png" class="m_detail mAni toShow_big transition1 delay9s"/></div>-->
+
+											</div>
+
+											<img src="img/ear.png" class="ear_img mAni buy_ear fadeInRight transition1" />
+										</div>
+									</div>
+								</div>
+								<a class="arrow-left_2" href="#"></a>
+								<a class="arrow-right_2" href="#"></a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide slide6">
+						<div class="f_header">
+							<img src="img/famian2.png" class="famian_png_2" />
+						</div>
+						<div class="gb-footer">
+							<div class="gb-footer__top">
+								<div class="gb-footer__inner">
+									<div class="gb-footer__container">
+										<div class="gb-footer__btn-top">
+											<a href="#" data-omni="click" data-omni-type="jumpto" data-omni-data="back to top:footer" class="back-top">回到顶部</a>
+										</div>
+										<div class="gb-footer__col-wrap">
+											<div class="gb-footer__nav-link gb-footer__col2">
+												<strong><a href="http://www.samsung.com/cn/info/sitemap/" target="_self" title="" data-omni="footer:sitemap">网站地图</a></strong>
+												<ul class="gb-footer__col4">
+													<li class="gb-footer__item gb-footer__blank">
+														<a href="http://www.galaxyclub.cn/?utm_source=samsung%2Ecom&amp;utm_medium=internal&amp;utm_content=text&amp;utm_campaign=2015%2D7%20GC%20Launch&amp;utm_adgroup=all" target="_blank" data-omni="click" data-omni-type="footer">盖乐世社区</a>
+													</li>
+													<li class="gb-footer__item">
+														<a href="http://www.samsung.com/cn/offer/" target="_self" data-omni="click" data-omni-type="footer">最新活动</a>
+													</li>
+													<li class="gb-footer__item">
+														<a href="http://www.samsung.com/cn/news/" target="_self" data-omni="footer:News">新闻中心</a>
+													</li>
+													<li class="gb-footer__item">
+														<a href="http://www.samsung.com/cn/aboutsamsung/home/" target="_self" data-omni="click" data-omni-type="footer">关于三星</a>
+													</li>
+													<li class="gb-footer__item gb-footer__blank">
+														<a href="http://www.samsung.com/us/aboutsamsung/ir/newsMain.do" target="_blank" data-omni="click" data-omni-type="footer">投资者关系</a>
+													</li>
+													<li class="gb-footer__item gb-footer__blank">
+														<a href="http://i.youku.com/u/UNDc5ODIwODIw" target="_blank" data-omni="click" data-omni-type="footer">三星视频空间</a>
+													</li>
+												</ul>
+												<ul class="gb-footer__col4">
+													<li class="gb-footer__item gb-footer__blank">
+														<a href="https://www.samsungshop.com.cn/?cid=cn_estore_dotcom" target="_blank" data-omni="click" data-omni-type="footer">网上商城</a>
+													</li>
+													<li class="gb-footer__item gb-footer__blank">
+														<a href="http://support-cn.samsung.com/ses/" target="_blank" data-omni="click" data-omni-type="footer">授权体验店</a>
+													</li>
+													<!--li class="gb-footer__item gb-footer__blank"><a href="http://club.samsung.com/cn" target="_blank" data-omni="click" data-omni-type="footer" data-omni="footer:Samsung Club">会员俱乐部</a></li-->
+													<li class="gb-footer__item gb-footer__blank">
+														<a href="http://www.dearsamsung.com.cn/" target="_blank" data-omni="click" data-omni-type="footer">人才招聘</a>
+													</li>
+													<li class="gb-footer__item gb-footer__blank">
+														<a href="http://www.samsung.com/cn/business/" target="_blank" data-omni="click" data-omni-type="footer">商务采购</a>
+													</li>
+													<li class="gb-footer__item gb-footer__blank">
+														<a href="http://support-cn.samsung.com/App/DeveloperChina/Home/Index" target="_blank" data-omni="click" data-omni-type="footer">三星开发者网站</a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="gb-footer__nav-link gb-footer__col4 s-support-link">
+												<strong>服务支持</strong>
+												<ul class="gb-footer__depth2">
+													<li class="gb-footer__item">
+														<a href="http://www.samsung.com/cn/support/" data-omni="click" data-omni-type="footer"><span class="gb-footer__svg s-ico-cyber"></span>查找产品支持</a>
+													</li>
+													<li class="gb-footer__item gb-footer__blank">
+														<a target="_blank" href="https://support-cn.samsung.com/supportcn/DealerLocator/index.aspx" data-omni="click" data-omni-type="footer"><span class="gb-footer__svg s-ico-contact"></span>三星专卖店招募</a>
+													</li>
+													<li class="gb-footer__item">
+														<a href="http://www.samsung.com/cn/support/#contactus" data-omni="click" data-omni-type="footer"><span class="gb-footer__svg s-ico-call"></span>联系我们</a>
+													</li>
+													<li class="gb-footer__item">
+														<a title="授权体验店查询" href="http://support-cn.samsung.com/ses/" data-omni="footer:need support_ses"><span class="gb-footer__svg s-ico-store"></span>授权体验店查询</a>
+													</li>
+													<li class="gb-footer__item">
+														<a title="服务中心查询" href="http://support-cn.samsung.com/support/ServiceLocations.asp" data-omni="footer:need support_ServiceLocations"><span class="gb-footer__svg s-ico-store"></span>服务中心查询</a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="gb-footer__col4 s-sns-link s-clear">
+												<div class="gb-footer__sns-list">
+													<strong>官方分享</strong>
+													<ul class="gb-footer__depth2">
+														<li class="gb-footer__item gb-footer__svg s-weixin">
+															<a title="Open in a new window" data-omni="footer:WeChat " href="http://support-cn.samsung.com/supportcn/wechat/index.html" target="_blank">微信</a>
+														</li>
+														<li class="gb-footer__item gb-footer__svg s-weibo">
+															<a title="Open in a new window" data-omni="footer:Sina " href="http://v.t.sina.com.cn/share/share.php" target="_blank">新浪微博</a>
+														</li>
+														<li class="gb-footer__item gb-footer__svg s-qq">
+															<a title="Open in a new window" data-omni="footer:Tencent " href="http://v.t.qq.com/share/share.php" target="_blank">腾讯微博</a>
+														</li>
+													</ul>
+												</div>
+												<div class="gb-footer__local-logo">
+													<ul>
+														<li class="gb-footer__item">
+															<a href="http://www.galaxyclub.cn/?utm_source=samsung%2Ecom&amp;utm_medium=internal&amp;utm_content=text&amp;utm_campaign=2015-7%20GC%20Launch&amp;utm_adgroup=all"><img src="http://support-cn.samsung.com/cn/next/img/cn-homepage-galaxyclub.png" alt="盖乐世社区"></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+
+										</div>
+										<div class="gb-footer__copyright">
+											<p class="gb-footer__text">©&nbsp;1995-2018&nbsp;三星（中国）投资有限公司&nbsp;版权所有</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gb-footer__bottom">
+								<div class="gb-footer__inner">
+									<div class="gb-footer__container">
+										<div class="gb-footer__bottom-list">
+											<ul class="gb-footer__list">
+												<li class="gb-footer__item">
+													<a href="http://www.samsung.com/cn/info/legal/" data-omni="click" data-omni-type="footer">服务条款</a>
+												</li>
+												<li class="gb-footer__item">
+													<a href="http://www.samsung.com/cn/info/statement/" data-omni="click" data-omni-type="footer">重要声明</a>
+												</li>
+												<li class="gb-footer__item">
+													<a href="http://www.samsung.com/cn/info/privacy/" data-omni="click" data-omni-type="footer">隐私政策</a>
+												</li>
+											</ul>
+											<div class="gb-footer__lang">
+												<a class="gb-footer__link" href="http://www.samsung.com/cn/function/ipredirection/ipredirectionLocalList/" data-omni="click" data-omni-type="footer" data-omni-data="footer:bottom_locallist">中国/中文</a>
+											</div>
+										</div>
+										<div class="gb-footer__local_foot_address">
+											<p>此网页最好使用IE9 浏览器、谷歌浏览器、苹果浏览器和其他新式浏览器进行浏览。</p>
+											<p>
+												<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备05068163号</a>　京公网安备110105011756号</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="js/idangerous.swiper2.7.6.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="js/index.js?v=18" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	</script>
+	
+</html>

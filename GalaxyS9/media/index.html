@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no">
+	<title>三星盖乐世S9 | S9+ 新品发布</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width:100%;
+            height:100%;
+        }
+        .video_box{
+            width:100%;
+            height:100%;
+            background:#000;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        .myVideo{
+            width:100%;
+            height:100%;
+        }
+        .play_btn{
+            width:1.54rem;
+            height:1.54rem;
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin:-0.77rem 0 0 -0.77rem;
+            background:url(media/video_play.png) no-repeat;
+            background-size:100%;
+        }
+    </style>
+	<script type="text/javascript">
+    var rem = document.documentElement.clientWidth / 320 * 50;
+    document.documentElement.style.fontSize = rem + 'px';
+	</script>
+</head>
+
+<body>
+    <div class="video_box video1_box">
+        <video class="myVideo" id="mvideo" playsinline="true" webkit-playsinline="true" airplay="allow" x-webkit-airplay="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-ignore-metadata="true" src="media/dog.mp4" poster="media/dog.jpg" loop></video>
+        <span class="play_btn"></span>
+    </div>
+</body>
+<script>
+(function(_D){
+        var _self = {};
+        _self.resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+        _self.Html = _D.getElementsByTagName("html")[0];
+        _self.widthProportion = function(){
+            var p = Number((_D.body&&_D.body.clientWidth||_self.Html.offsetWidth)/640).toFixed(3);
+            return p>1.067?1.067:p<0.444?0.444:p;
+        };
+        _self.changePage = function(){
+            _self.Html.setAttribute("style","font-size:"+_self.widthProportion()*100+"px");
+            _self.correctPx();
+        };
+        _self.correctPx = function(){
+            var docEl = document.documentElement;
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth || clientWidth > 768) return;
+            var div = document.createElement('div');
+            div.style.width = '1.4rem';
+            div.style.height = '0';
+            document.body.appendChild(div);
+            var ideal = 140 * clientWidth / 640;
+            var rmd = (div.clientWidth / ideal);
+            console.log(rmd);
+            if(rmd > 1.2 || rmd < 0.8){
+                docEl.style.fontSize = 100 * (clientWidth / 640) / rmd + 'px';
+                document.body.removeChild(div);
+            }
+
+        };
+        _self.changePage();
+        if (!document.addEventListener) return;
+        window.addEventListener(_self.resizeEvt,_self.changePage,false);
+        document.addEventListener('DOMContentLoaded', _self.changePage, false);
+})(document);
+var oVideo=document.getElementById("mvideo");
+var oBtn=document.querySelector(".play_btn");
+oBtn.onclick=function(){
+    oBtn.style.display="none";
+    oVideo.play();
+};
+document.documentElement.addEventListener("touchmove",function(e) {
+    e.preventDefault();
+});
+</script>
+
+<!-- SiteCatalyst code version: H.24.Copyright 1997-2008 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="/scripts/s_code_microsite_p4.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+s.pageName="cn:campaign:mobilephone:galaxys9_media_20180326:index"
+s.hier1="cn>campaign>mobilephone>galaxys9_media_20180326>index"
+s.channel="cn:campaign"
+s.prop1="cn"
+s.prop2="cn:campaign"
+s.prop3="cn:campaign:mobilephone"
+s.prop4="cn:campaign:mobilephone:galaxys9_media_20180326"
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://nmetrics.samsung.com/b/ss/sssamsung4cn,sssamsung4mstglobal/1/H.25.5--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.25.5. -->
+
+
+</html>

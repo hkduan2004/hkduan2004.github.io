@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="wxm:timeline_title" content="隐藏的呼救">
+    <meta name="wxm:appmessage_title" content="隐藏的呼救">
+    <meta name="wxm:appmessage_desc" content="隐藏的呼救">
+    <!-- 分享缩略图，必须为绝对路径-->
+    <meta name="wxm:img_url" content="http://wximg.gtimg.com/tmt/_demo/wxmoment/img/thumb.jpg">
+    <!-- 分享链接-->
+    <meta name="wxm:link" content="http://wximg.gtimg.com/tmt/_demo/wxmoment/share.html">
+	<title>倾听隐藏的真相</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body onload="init();">
+
+    <!--容器-->
+    <div class="holder abs">
+        <div class="screen screen1">
+            <canvas id="canvas" width="640" height="1200"
+                    style="position: absolute; display: block;
+                    background-color:rgba(0, 0, 0, 1.00);"></canvas>
+        </div>
+        <div class="abs payBox hidden">
+            <div class="abs pay_con">
+                <img src="img/pay_bg.png">
+
+                <div class="abs btn_base btn1">
+                    <img class="btn_pic btn_pic1" src="img/pay_icon02.png">
+                </div>
+                <div class="abs btn_base btn2">
+                    <img class="btn_pic btn_pic2 alpha" src="img/pay_icon02.png">
+                </div>
+                <div class="abs btn_base btn3">
+                    <img class="btn_pic btn_pic3 alpha" src="img/pay_icon02.png">
+                </div>
+                <div class="abs btn_base btn4">
+                    <img class="btn_pic btn_pic4 alpha" src="img/pay_icon02.png">
+                </div>
+
+                <input class="abs myInput" id="myInput" type="number" value="">
+
+                <div class="abs niming">
+                    <img class="niming_pic" src="img/pay_icon01.png">
+                </div>
+
+                <div class="abs tongyi">
+                    <img class="tongyi_pic" src="img/pay_icon01.png">
+                </div>
+
+                <div class="abs subBtn"></div>
+                <div class="abs xieyi"></div>
+                <div class="abs closeBtn"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="devideTips_Boxs hidden" style="display: none;">
+        <div class="devideTips_Box">
+            <img class="devide_img" src="./img/devide_tips.png">
+            <div class="devide_txt">为了更好的体验，请使用竖屏浏览</div>
+        </div>
+    </div>
+
+    <audio id="snd1" src="./media/test.mp3"></audio>
+    <audio id="snd2" src="./media/test.mp3"></audio>
+
+    <script src="./js/jquery.1.11.0.min.js"></script>
+    <script src="./js/GImgLoad.js"></script>
+    <script src="./js/Gyroscope.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="./js/createjs-2015.11.26.min.js"></script>
+    <script src="js/share.js"></script>
+    <script src="./loading.js?v=2"></script>
+    <script src="./ani.js?v=7"></script>
+    <script src="./js/lib.js?v=7"></script>
+
+    <script src="//cdn.bootcss.com/eruda/1.2.4/eruda.min.js"></script>
+    <script>eruda.init();</script>
+
+
+    <!-- build:js ../js/lib.js -->
+    <script src="./js/main.js?v=8"></script>
+    <!-- endbuild -->
+
+
+    <script>
+        document.addEventListener('touchmove', backed);
+        function backed(e) {
+            e.preventDefault();
+        }
+    </script>
+</body>
+</html>

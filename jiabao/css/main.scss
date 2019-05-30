@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a, img {
+  -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none; /* 禁止选中文本（如无文本选中需求，此为必选项） */
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #070709;
+}
+
+body {
+  overflow: hidden;
+  background-color: #f9f4e1;
+}
+
+.abs {
+  position: absolute;
+}
+
+.rel {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.alpha {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@mixin rotate($rotate){
+  -o-transform:rotate($rotate);
+  -moz-transform:rotate($rotate);
+  -ms-transform:rotate($rotate);
+  -webkit-transform:rotate($rotate);
+  transform:rotate($rotate);
+}
+@mixin origin($top,$left){
+  -o-transform-origin: $top $left;
+  -moz-transform-origin: $top $left;
+  -ms-transform-origin: $top $left;
+  -webkit-transform-origin: $top $left;
+  transform-origin: $top $left;
+}
+@mixin scale($scale,$scale){
+  -o-transform: scale($scale,$scale);
+  -moz-transform:scale($scale,$scale);
+  -ms-transform: scale($scale,$scale);
+  -webkit-transform: scale($scale,$scale);
+  transform: scale($scale,$scale);
+}
+@mixin keyframes($a) {
+  @-webkit-keyframes #{$a} {
+    @content;
+  }
+  @-moz-keyframes #{$a} {
+    @content;
+  }
+  @keyframes #{$a} {
+    @content;
+  }
+}
+
+.vid{
+  width: 640px;height: 1040px;top: 0;left: 0;
+  @include origin(top,left);
+
+}
+.holder{
+  @include origin(top,left);
+  overflow: hidden; width: 640px;
+  .vidBox{top: 0;left: 0;}
+  .payBox{
+    width: 640px; height: 1100px;bottom: 0;left: 0;
+    background-color: rgba(0,0,0,.7);
+    .btn_base{top: 150px;left: 42px;background: rgba(255,255,255,.01);
+      -webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);
+    }
+    .pay_con{
+      width: 640px;height: 594px;
+      bottom: 0;left: 0;overflow: hidden;
+      .btn2{left: 182px;}
+      .btn3{left: 321px;}
+      .btn4{left: 462px;}
+
+      .myInput{width: 250px;height: 75px;left: 150px;top: 261px;text-align: center;
+        background: none;border: none;font-size: 30px;color: #b3b3b3;
+        -webkit-tap-highlight-color:rgba(255, 255, 255, 0);
+        outline: none;
+        border: none;
+      }
+      .niming{
+        width: 126px;height: 38px;
+        top: 276px;background: rgba(255,255,255,.01);
+        left: 467px;
+        -webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);
+      }
+      .tongyi{
+        width: 85px;height: 38px;
+        top: 503px;left: 160px;background: rgba(255,255,255,.01);
+        -webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);
+      }
+      .subBtn{width: 562px;height: 78px;top: 400px;left: 41px;
+        -webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);
+      }
+
+      .xieyi{
+        width: 300px;height: 50px;
+        top: 500px;left: 250px;background: rgba(255,255,255,.01);
+      }
+
+    }
+
+    .closeBtn{
+      width: 80px;
+      height: 80px;background: rgba(255,255,255,.01);
+      top: 0px;left: 560px;
+    }
+
+  }
+}
+
+
+.loading{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #070709;
+}
+
+.devideTips_Boxs{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  z-index: 9997;
+  .devideTips_Box{
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    margin-top: -75px;
+    text-align: center;
+  }
+  .devide_img{
+    display: inline-block;
+    width: 67px;
+    height: 109px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -webkit-animation: rotation infinite 1.5s ease-in-out;
+    animation: rotation infinite 1.5s ease-in-out;
+    -webkit-background-size: 67px;
+    background-size: 67px;
+  }
+  .devide_txt{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #fff;
+  }
+}
+@include keyframes(rotation){
+  10% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+  50%, 60% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+}
