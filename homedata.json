@@ -1,0 +1,12 @@
+{
+  "lunbotuList": [
+    {
+      "img": "../images/yuantiao.jpg",
+      "url": "http://www.google.com"
+    },
+    {
+      "img": "../images/shuijiao.jpg",
+      "url": "http://www.baidu.com"
+    }
+  ]
+}
